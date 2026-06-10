@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html lang="pt"> 
+    
+    <head> 
+        <meta charset='utf-8'> 
+        <title>Top10 Personagens</title> 
+        <meta name="autor" content="Tiago Loureiro/ Leonarda Veiga/ Eduardo Martins"> 
+        <meta name="ano" content="2026"> 
+        <meta name="palavras_chave" content="Top10 Personagens da historia do cinema"> 
+        <meta name="title" content="Cinema XML"> 
+        <link rel="stylesheet" href="Top10.css"> 
+    </head>
+
+    <body>
+         
+        <h1>🎬 Top 10 Personagens do Cinema</h1>
+
+        <div id="output" class="grid"></div>
+
+        <script>
+            async function loadXML() {
+                const response = await fetch("characters.xml");
+                const text = await response.text();
+
+                const parser = new DOMParser();
+                const xml = parser.parseFromString(text, "text/xml");
+
+                const personagens = xml.getElementsByTagName("personagem");
+
+                let html = "";
+
+                for (let i = 0; i < personagens.length; i++) {
+
+                    const nome = personagens[i].getElementsByTagName("nome")[0].textContent;
+                    const filme = personagens[i].getElementsByTagName("filme")[0].textContent;
+                    const ator = personagens[i].getElementsByTagName("ator")[0].textContent;
+                    const franquia = personagens[i].getElementsByTagName("franquia")[0].textContent;
+                    const ano = personagens[i].getElementsByTagName("ano")[0].textContent;
+
+                    html += `
+                    <div class="card">
+                        <div class="title">${nome}</div>
+                        <p><b>Filme:</b> ${filme}</p>
+                        <p><b>Ator:</b> ${ator}</p>
+                        <p><b>Franquia:</b> ${franquia}</p>
+                        <p class="year">📅 ${ano}</p>
+                    </div>
+                    `;
+                }
+
+                document.getElementById("output").innerHTML = html;
+            }
+
+            loadXML();
+        </script>
+
+        <footer>
+            <a href="characters.xml" download="Personagens.xml">Transferir ficheiro XML</a>
+        </footer>
+
+    </body>
+    
+</html>

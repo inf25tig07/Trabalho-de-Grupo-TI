@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<personagens xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="characters.xsd">
+
+    <personagem>
+        <nome>Indiana Jones</nome>
+        <filme>Os Caçadores da Arca Perdida</filme>
+        <ator>Harrison Ford</ator>
+        <franquia>Indiana Jones</franquia>
+        <ano>1981</ano>
+    </personagem>
+
+    <personagem>
+        <nome>Darth Vader</nome>
+        <filme>Star Wars: Episódio IV-Uma Nova Esperança</filme>
+        <ator>James Earl Jones / David Prowse</ator>
+        <franquia>Star Wars</franquia>
+        <ano>1977</ano>
+    </personagem>
+
+    <personagem>
+        <nome>Batman</nome>
+        <filme>O Cavaleiro das trevas</filme>
+        <ator>Christian Bale</ator>
+        <franquia>Trilogia Cavaleiro das trevas</franquia>
+        <ano>2008</ano>
+    </personagem>
+
+    <personagem>
+        <nome>James Bond</nome>
+        <filme>Casino Royale</filme>
+        <ator>Daniel Craig</ator>
+        <franquia>007</franquia>
+        <ano>2006</ano>
+    </personagem>
+
+    <personagem>
+        <nome>Frodo Baggins</nome>
+        <filme>O Senhor dos Anéis: A Irmandade do Anel</filme>
+        <ator>Elijah Wood</ator>
+        <franquia>Senhor dos Anéis</franquia>
+        <ano>2001</ano>
+    </personagem>
+
+    <personagem>
+        <nome>Harry Potter</nome>
+        <filme>Harry Potter e a Pedra Filosofal</filme>
+        <ator>Daniel Radcliffe</ator>
+        <franquia>Harry Potter</franquia>
+        <ano>2001</ano>
+    </personagem>
+
+    <personagem>
+        <nome>Jack Sparrow</nome>
+        <filme>Piratas das Caraíbas: A Maldição do Pérola Negra </filme>
+        <ator>Johnny Depp</ator>
+        <franquia>Piratas das Caraíbas</franquia>
+        <ano>2003</ano>
+    </personagem>
+
+    <personagem>
+        <nome>Neo</nome>
+        <filme>Matrix</filme>
+        <ator>Keanu Reeves</ator>
+        <franquia>Matrix</franquia>
+        <ano>1999</ano>
+    </personagem>
+
+    <personagem>
+        <nome>Spider-Man</nome>
+        <filme>Homem-Aranha</filme>
+        <ator>Tobey Maguire</ator>
+        <franquia>Homem-Aranha</franquia>
+        <ano>2002</ano>
+    </personagem>
+
+    <personagem>
+        <nome>Hannibal Lecter</nome>
+        <filme>O Silêncio dos Inocentes</filme>
+        <ator>Anthony Hopkins</ator>
+        <franquia>Hannibal</franquia>
+        <ano>1991</ano>
+    </personagem>
+
+</personagens>
