@@ -1,0 +1,111 @@
+body {
+    background: #141414;
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    background: #111;
+}
+
+h1{
+    color: #E50914;
+    font-family: Impact, Bebas Neue,sans-serif;
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    font-family: Impact, Bebas Neue,sans-serif;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #E50914;
+}
+
+section {
+    padding: 20px 40px;
+}
+
+section h2 {
+    margin-bottom: 15px;
+}
+
+main {
+    display: grid;
+    gap: 30px;
+}
+
+/* Container do carrossel */
+.carrossel {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Lista de cards */
+.lista {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    width: 100%;
+}
+
+.lista::-webkit-scrollbar {
+    display: none;
+}
+
+/* Cards */
+.card {
+    flex: 0 0 auto;
+    width: 640px;
+    height: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform .3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+/* Imagens */
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Setas */
+.seta {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+    flex-shrink: 0;
+}
+
+.seta:hover {
+    background: rgba(255, 255, 255, 0.3);
+}

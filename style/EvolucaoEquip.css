@@ -1,0 +1,264 @@
+
+body {
+    background: #141414;
+    background-image: url("fundoCinema.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: #111;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #E50914;
+}
+
+h1 {
+    color: #E50914;
+    font-family: Impact, "Bebas Neue", sans-serif;
+    font-size: 60px;
+    letter-spacing: 2px;
+
+    /* Animação */
+    animation: brilho 2s infinite alternate;
+}
+
+h2 {
+    color: #E50914;
+}
+
+h4 {
+    color: #E50914;
+}
+
+main {
+    display: grid;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* -------------------- */
+/* FLOAT */
+/* -------------------- */
+
+aside {
+    float: right;
+    width: 250px;
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+/* -------------------- */
+/* POSITION */
+/* -------------------- */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Combinação float + position */
+
+figure {
+    float: left;
+    position: relative;
+    left: 10px;
+    margin-right: 20px;
+}
+
+figure img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* -------------------- */
+/* TABELA */
+/* -------------------- */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #222;
+}
+
+thead {
+    background: #E50914;
+}
+
+tbody tr:nth-child(even) {
+    background: #333;
+}
+
+tfoot {
+    background: #111;
+    font-weight: bold;
+}
+
+th,
+td {
+    border: 1px solid #555;
+    padding: 12px;
+    text-align: center;
+}
+
+/* -------------------- */
+/* LISTAS */
+/* -------------------- */
+
+ol {
+    padding-left: 30px;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+/* -------------------- */
+/* FORMULÁRIO */
+/* -------------------- */
+
+/* Seletor de atributo */
+
+input[type="text"] {
+    padding: 8px;
+    border: 2px solid #E50914;
+    border-radius: 5px;
+}
+
+input[type="email"] {
+    padding: 8px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background: #E50914;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+/* -------------------- */
+/* SUBSTITUIÇÃO POR IMAGEM */
+/* -------------------- */
+
+.logoCinema {
+    display: block;
+    width: 180px;
+    height: 100px;
+    background-image: url("imagem13.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-indent: -9999px;
+}
+
+/* -------------------- */
+/* VIDEO E AUDIO */
+/* -------------------- */
+
+video,
+audio {
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+/* -------------------- */
+/* ANIMAÇÃO CSS */
+/* -------------------- */
+
+@keyframes brilho {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.05);
+    }
+}
+
+/* -------------------- */
+/* FOOTER */
+/* -------------------- */
+
+footer {
+    text-align: center;
+    background: #111;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* -------------------- */
+/* RESPONSIVIDADE */
+/* -------------------- */
+
+@media screen and (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    aside {
+        float: none;
+        width: auto;
+        margin: 10px 0;
+    }
+
+    figure {
+        float: none;
+        margin: auto;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    figure img {
+        width: 100%;
+    }
+}
+

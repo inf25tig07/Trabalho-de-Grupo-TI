@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="personagens">
+        <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="personagem" maxOccurs="10" minOccurs="10">
+                    <xs:complexType>
+                        <xs:sequence>
+
+                            <xs:element name="nome" type="xs:string"/>
+                            <xs:element name="filme" type="xs:string"/>
+                            <xs:element name="ator" type="xs:string"/>
+                            <xs:element name="franquia" type="xs:string"/>
+
+        
+                            <xs:element name="ano" type="xs:gYear"/>
+
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
